@@ -23,6 +23,12 @@
           <li class="rounded-box">
             <a href="#" class="hover:text-primary">Contact</a>
           </li>
+            <li class="rounded-box dropdown dropdown-hover">
+              <label tabindex="0" class="btn btn-ghost normal-case text-lg">tp</label>
+              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="/tp/databinding">Databinding</a></li>
+              </ul>
+            </li>
         </ul>
       </nav>
 
@@ -56,7 +62,7 @@
               <a href="#" class="hover:text-primary">À propos</a>
             </li>
             <li>
-              <a href="#" class="hover:text-primary">Services</a>
+              <a href="#" class="hover:text-primary">tp</a>
             </li>
             <li>
               <a href="#" class="hover:text-primary">Contact</a>

@@ -14,8 +14,17 @@ const router = createRouter({
             path: '/about',
             name: 'about',
             component: () => import('../views/About.vue')
+        },
+        {
+            path: '/lessons/databinding',
+            name: 'lesson-databinding',
+            component: () => import('../views/lessons/data-binding.vue')
+        },
+                {
+            path: '/tp/databinding',
+            name: 'tp-databinding',
+            component: () => import('../views/tp/data-binding.vue')
         }
     ]
 });
-
 export default router;
