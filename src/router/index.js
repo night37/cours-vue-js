@@ -24,6 +24,16 @@ const router = createRouter({
             path: '/tp/databinding',
             name: 'tp-databinding',
             component: () => import('../views/tp/data-binding.vue')
+        },
+        {
+            path: '/compteur',
+            name: 'compteur',
+            component: () => import('../views/exercices/compteur.vue')
+        },
+                {
+            path: '/binding',
+            name: 'binding',
+            component: () => import('../views/exercices/binding.vue')
         }
     ]
 });
