@@ -9,7 +9,7 @@
             <button  class="btn btn-primary mb-4" @click="addMovie(movie)">
                 Ajouter à votre Liste
             </button>
-            <button  class="btn btn-error mb-4" @click="clearList(movie)">
+            <button  class="btn btn-error mb-4" @click="moviesList = []">
                 Vider la liste
             </button>
 
@@ -24,8 +24,8 @@
             </div>
             <div v-if="moviesList.length > 0" class="text-gray-500">
                 <ul>
-                    <li v-for="movie in moviesList">
-                        {{ movie }}
+                    <li class="badge badge-outline hover:bg-amber-100" v-for="movie, key in moviesList" @click="moviesList.splice(idx, 1)">
+                        {{ movie }} <img class="h-[16px] w-[16px]" src="/trash.svg" alt=""/>
                     </li>
                 </ul>
             </div>
@@ -40,14 +40,12 @@ import { watch, ref } from 'vue';
     const moviesList = ref([])
     const movie = ref("")
     const addMovie = (movie) => {
-        moviesList.value.push(movie)
+        if(movie) {
+            
+            moviesList.value.push(movie)
+        }
     }
     const clearList = () => {
         moviesList.value = []
     }
-
-    // watch(movie => {
-    //     console.log("coucpu");
-    // })
-
 </script>
