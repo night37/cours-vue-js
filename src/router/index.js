@@ -30,11 +30,18 @@ const router = createRouter({
             name: 'compteur',
             component: () => import('../views/exercices/compteur.vue')
         },
-                {
+        {
             path: '/exercices/dynamic-styling',
             name: 'dynamic-styling',
             component: () => import('../views/exercices/dynamic-styling.vue')
+        },
+                        {
+            path: '/exercices/dynamic-input-styling',
+            name: 'dynamic-input-styling',
+            component: () => import('../views/exercices/dynamic-input-styling.vue')
         }
+
+        
     ]
 });
 export default router;
