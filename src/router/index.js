@@ -35,10 +35,15 @@ const router = createRouter({
             name: 'dynamic-styling',
             component: () => import('../views/exercices/dynamic-styling.vue')
         },
-                        {
+        {
             path: '/exercices/dynamic-input-styling',
             name: 'dynamic-input-styling',
             component: () => import('../views/exercices/dynamic-input-styling.vue')
+        },
+        {
+            path: '/exercices/watchlist',
+            name: 'watchlist',
+            component: () => import('../views/exercices/watchlist.vue')
         }
 
         
