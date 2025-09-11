@@ -31,9 +31,9 @@ const router = createRouter({
             component: () => import('../views/exercices/compteur.vue')
         },
                 {
-            path: '/binding',
-            name: 'binding',
-            component: () => import('../views/exercices/binding.vue')
+            path: '/exercices/dynamic-styling',
+            name: 'dynamic-styling',
+            component: () => import('../views/exercices/dynamic-styling.vue')
         }
     ]
 });
