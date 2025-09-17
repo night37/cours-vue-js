@@ -9,12 +9,14 @@
     </main>
     <!-- Footer en bas de la page -->
     <AppFooter />
+    <!-- <Props foo="coucou foo" username="guillaume"/> -->
   </div>
 </template>
 
 <script setup>
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+import Props from './views/lessons/props.vue'
 // Pas de logique spécifique nécessaire ici,
 // Nuxt gère automatiquement la mise en page
 // avec les composants de layout.

@@ -20,10 +20,25 @@ const router = createRouter({
             name: 'lesson-databinding',
             component: () => import('../views/lessons/data-binding.vue')
         },
-                {
+            {
+            path: '/lessons/lifecycle',
+            name: 'lifecycle',
+            component: () => import('../views/lessons/lifecycle.vue')
+        },
+            {
+            path: '/lessons/props',
+            name: 'props',
+            component: () => import('../views/lessons/props.vue')
+        },
+        {
             path: '/tp/databinding',
             name: 'tp-databinding',
             component: () => import('../views/tp/data-binding.vue')
+        },
+        {
+            path: '/tp/component-communications.vue',
+            name: 'component-communication',
+            component: () => import('../views/tp/component-communication/component-communication.vue')
         },
         {
             path: '/compteur',
@@ -44,7 +59,18 @@ const router = createRouter({
             path: '/exercices/watchlist',
             name: 'watchlist',
             component: () => import('../views/exercices/watchlist.vue')
-        }
+        },
+        {
+            path: '/exercices/fetch-api',
+            name: 'fetch-api',
+            component: () => import('../views/exercices/fetch-api.vue')
+        },
+        {
+            path: '/exercices/FriendsList',
+            name: 'props',
+            component: () => import('../views/exercices/props/friendsList.vue')
+        },
+
 
         
     ]
