@@ -16,7 +16,18 @@ import {ref, defineEmits} from "vue"
 
 const name = ref("john")
 const age = ref(25)
-const emit = defineEmits(["user"])
+const emit = defineEmits({
+    user: {
+        name: {
+            type: String,
+            required: true
+        },
+        age: {
+            type: Number,
+            required: true
+        }
+    }
+})
 
 
 const onSubmit = () =>{

@@ -10,9 +10,16 @@
 <script setup>
 
 defineProps({
-    name: String,
-    age: Number
-
+    name: {
+        type:String,
+        required: true,
+        default: "John"
+    }, 
+    age: {
+        type: Number,
+        required:true,
+        default: "25"
+    }
     
 })
 
